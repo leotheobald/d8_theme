@@ -101,8 +101,12 @@ main:after {
     margin-right: 1.04166667%;
   }
 }
-#header,
-#main,
-#footer {
+#content,
+#sidebar {
   min-height: 300px;
+  -webkit-transition: all 1s ease-in 0.2s;
+  -moz-transition: all 1s ease-in 0.2s;
+  -ms-transition: all 1s ease-in 0.2s;
+  -o-transition: all 1s ease-in 0.2s;
+  transition: all 1s ease-in 0.2s;
 }
