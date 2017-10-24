@@ -1,5 +1,5 @@
-@import url('grid.less');
-@import url('helper-mixins.less');
+@import url('less/grid.less');
+@import url('less/helper-mixins.less');
 
 
 // Variables
@@ -9,24 +9,24 @@
 
 // Styles
 // ------------------------
-.header {
+#header {
 	#grid > .setGridWidths(6, 8, 1, 3);	
 	background-color: #630537;
 }
 
-.main {
+#main {
 	#grid > .setGridWidths(6, 2, 3, 5);	
 	background-color: #F0F9E3;
 }
 
-.footer {
+#footer {
 	#grid > .setGridWidths(12, 2, 6, 8);	
 	background-color: #CAD1C1;
 }
 
-.header,
-.main,
-.footer {
+#header,
+#main,
+#footer {
 	height: 300px;
 	-webkit-transition: all 1s ease-in .2s;
     -moz-transition: 	all 1s ease-in .2s;

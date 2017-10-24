@@ -1,7 +1,7 @@
 {
-  "name": "first_theme",
+  "name": "d8_theme",
   "version": "1.0.0",
-  "description": "Twig less theme",
+  "description": "Drupal 8 twig less theme",
   "main": "index.php",
   "repository": "https://github.com/leotheobald/d8_theme",
   "dependencies": {
