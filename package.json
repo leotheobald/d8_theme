@@ -1,0 +1,25 @@
+{
+  "name": "first_theme",
+  "version": "1.0.0",
+  "description": "Twig less theme",
+  "main": "index.php",
+  "repository": "https://github.com/leotheobald/d8_theme",
+  "dependencies": {
+    "browserify": "*",
+    "less": "*"
+  },
+  "devDependencies": {
+    "watchify": "*",
+    "catw": "*"
+  },
+  "scripts": {
+    "watch-css": "catw -c 'lessc -' 'less/styles.less' -o css/styles.css -v",
+    "build-css": "catw -c 'lessc -' 'less/styles.less' > css/styles.css"
+  },
+  "author": "Leo Theobald",
+  "license": "ISC",
+  "keywords": [
+    "less",
+    "theme"
+  ]
+}

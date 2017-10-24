@@ -1,0 +1,16 @@
+name: Drupal 8 test theme
+type: theme
+description: Drupal 8 twig and less theme
+package: Other
+core: 8.x
+libraries:
+  - drupal8test/global-styling
+ 
+base theme: false
+
+regions:
+    headline: headline
+    header: Header
+    content: Main
+    sidebar: Sidebar
+    footer: footer
