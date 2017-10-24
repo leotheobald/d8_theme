@@ -11,16 +11,14 @@
 // ------------------------
 
 #header {
-	//#grid > .setGridWidths(12, 12, 12, 12);
+	#grid > .setGridWidths(12, 12, 12, 12);
 	//background-color: #630537;
 }
 
 main {
 
-	.clearfix;
-
 	#content {
-		#grid > .setGridWidths(9, 8, 12, 12);
+		#grid > .setGridWidths(12, 12, 12, 12);
 		//background-color: #F0F9E3;
 	}
 
@@ -30,16 +28,23 @@ main {
 }
 
 #footer {
-	//#grid > .setGridWidths(12, 12, 12, 12);
+	#grid > .setGridWidths(12, 12, 12, 12);
 	//background-color: #CAD1C1;
+}
+
+#header,
+#main,
+#footer {
+	min-height: 300px;
+	position: relative;
+	.clearfix;
 }
 
 #content,
 #sidebar{
-	min-height: 300px;
-    -webkit-transition: all 1s ease-in .2s;
-    -moz-transition: 	all 1s ease-in .2s;
-    -ms-transition: 	all 1s ease-in .2s;
-    -o-transition: 		all 1s ease-in .2s;
-    transition: 		all 1s ease-in .2s;
+	-webkit-transition: all 1s ease-in .2s;
+	-moz-transition: 	all 1s ease-in .2s;
+	-ms-transition: 	all 1s ease-in .2s;
+	-o-transition: 		all 1s ease-in .2s;
+	transition: 		all 1s ease-in .2s;
 }
