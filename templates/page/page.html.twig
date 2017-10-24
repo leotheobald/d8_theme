@@ -1,19 +1,21 @@
 
 <article id="page" class="wrapper">
 
-  {% if page.headline %}
-	<section id="headline">
-		<div class="container">
-			{{ page.headline }}
-		</div>
-	</section>
-	{% endif %}
+
 
 	<header id="header">
 		<div class="container">
 			{{ page.header }}
 		</div>
 	</header>
+
+	{% if page.headline %}
+		<section id="headline">
+			<div class="container">
+				{{ page.headline }}
+			</div>
+		</section>
+	{% endif %}
 
 	<main id="main">
 

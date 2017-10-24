@@ -51,17 +51,4 @@
 			<div{{ attributes }}>{{ item.content }}</div>
 		{% endfor %}
 	{% endif %}
-{% else %}
-	<div{{ attributes }}>
-		<div{{ title_attributes }}>{{ label }}</div>
-		{% if multiple %}
-		<div class="leo body">
-			{% endif %}
-			{% for item in items %}
-				<div{{ item.attributes }}>{{ item.content }}</div>
-			{% endfor %}
-			{% if multiple %}
-		</div>
-		{% endif %}
-	</div>
 {% endif %}

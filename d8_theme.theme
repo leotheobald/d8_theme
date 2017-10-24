@@ -143,3 +143,24 @@ function d8_theme_theme_suggestions_details_alter(array &$suggestions, array $va
 function d8_theme_preprocess_menu_local_task(array &$variables) {
   //$variables['element']['#link']['url']->setOption('attributes', ['class'=>'rounded']);
 }
+
+/**
+ * Implements hook_preprocess_paragraph__banner().
+ */
+function d8_theme_preprocess_paragraph__banner(&$variables) {
+
+  $paragraph = $variables['paragraph'];
+
+  if (!$paragraph->field_background_image->isEmpty()) {
+
+    $image = $paragraph->field_background_image->entity->url();
+
+    $variables['attributes']['style'][] = 'background-image: url("' . $image . '");';
+
+    $variables['attributes']['style'][] = 'background-size: center cover;';
+
+    $variables['attributes']['style'][] = 'background-position: center center;';
+
+  }
+
+}

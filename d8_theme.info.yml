@@ -9,8 +9,8 @@ libraries:
 base theme: false
 
 regions:
-    headline: headline
     header: Header
+    headline: headline
     content: Main
     sidebar: Sidebar
     footer: footer
