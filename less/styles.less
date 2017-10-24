@@ -9,6 +9,9 @@
 
 // Styles
 // ------------------------
+body {
+	margin: 0;
+}
 
 #header {
 	#grid > .setGridWidths(12, 12, 12, 12);
@@ -16,23 +19,23 @@
 }
 
 main {
-
-	#content {
-		#grid > .setGridWidths(12, 12, 12, 12);
-		//background-color: #F0F9E3;
-	}
-
-	#sidebar {
-		#grid > .setGridWidths(3, 4, 12, 12);
-	}
+	#grid > .setGridWidths(12, 12, 12, 12);
 }
+
+#content {
+	//#grid > .setGridWidths(12, 12, 12, 12);
+	//background-color: #F0F9E3;
+}
+
+//#sidebar {
+//	#grid > .setGridWidths(3, 4, 12, 12);
+//}
 
 #footer {
 	#grid > .setGridWidths(12, 12, 12, 12);
 	//background-color: #CAD1C1;
 }
 
-#header,
 #main,
 #footer {
 	min-height: 300px;
@@ -47,4 +50,12 @@ main {
 	-ms-transition: 	all 1s ease-in .2s;
 	-o-transition: 		all 1s ease-in .2s;
 	transition: 		all 1s ease-in .2s;
+}
+
+// Paragraph style
+// ---------------
+.paragraph--type--banner {
+  min-height: 300px;
+  position: relative;
+  .clearfix;
 }
